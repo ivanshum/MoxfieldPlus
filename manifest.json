@@ -1,0 +1,40 @@
+{
+  "name": "Moxfield+",
+  "description": "Moxfield+: Custom exports & Tagger integration for precise deckbuilding. Preserve printings, foils, & more. Craft & share decks seamlessly.",
+  "homepage_url": "https://github.com/llagerlof/fresh-chrome-extension",
+  "version": "3.1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Fresh Chrome Extension boilerplate 3.1.0",
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "32": "assets/icons/icon-32.png",
+      "64": "assets/icons/icon-64.png",
+      "128": "assets/icons/icon-128.png",
+      "256": "assets/icons/icon-256.png"
+    }
+  },
+  "icons": {
+    "32": "assets/icons/icon-32.png",
+    "64": "assets/icons/icon-64.png",
+    "128": "assets/icons/icon-128.png",
+    "256": "assets/icons/icon-256.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "js": ["src/content/before.js"],
+      "matches": ["https://www.moxfield.com/*", "http://www.moxfield.com/*"]
+    },
+    {
+      "run_at": "document_idle",
+      "js": ["src/content/after.js"],
+      "matches": ["https://www.moxfield.com/*", "http://www.moxfield.com/*"]
+    }
+  ],
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": [
+    "https://www.moxfield.com/*",
+    "http://www.moxfield.com/*"
+  ]
+}
