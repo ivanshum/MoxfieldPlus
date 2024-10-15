@@ -1,37 +1,37 @@
 {
   "name": "Moxfield+",
   "description": "Moxfield+: Custom exports & Tagger integration for precise deckbuilding. Preserve printings, foils, & more. Craft & share decks seamlessly.",
-  "homepage_url": "https://github.com/llagerlof/fresh-chrome-extension",
+  "homepage_url": "https://github.com/ivanshum/MoxfieldPlus",
   "version": "3.1.0",
   "manifest_version": 3,
   "action": {
-    "default_title": "Fresh Chrome Extension boilerplate 3.1.0",
-    "default_popup": "src/popup/popup.html",
+    "default_title": "Moxfield+ | Your Deckbuilding Spark",
+    "default_popup": "index.html",
     "default_icon": {
-      "32": "assets/icons/icon-32.png",
-      "64": "assets/icons/icon-64.png",
-      "128": "assets/icons/icon-128.png",
-      "256": "assets/icons/icon-256.png"
+      "32": "icons/icon-32.png",
+      "64": "icons/icon-64.png",
+      "128": "icons/icon-128.png",
+      "256": "icons/icon-256.png"
     }
   },
   "icons": {
-    "32": "assets/icons/icon-32.png",
-    "64": "assets/icons/icon-64.png",
-    "128": "assets/icons/icon-128.png",
-    "256": "assets/icons/icon-256.png"
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png",
+    "256": "icons/icon-256.png"
   },
   "content_scripts": [
     {
-      "run_at": "document_start",
-      "js": ["src/content/before.js"],
-      "matches": ["https://www.moxfield.com/*", "http://www.moxfield.com/*"]
-    },
-    {
-      "run_at": "document_idle",
-      "js": ["src/content/after.js"],
+      "run_at": "document_end",
+      "js": ["src/content_script/main.tsx"],
       "matches": ["https://www.moxfield.com/*", "http://www.moxfield.com/*"]
     }
   ],
+  "background": {
+    "service_worker": "src/background/background.ts",
+    "type": "module",
+    "persistent": false
+  },
   "permissions": ["tabs", "scripting"],
   "host_permissions": [
     "https://www.moxfield.com/*",

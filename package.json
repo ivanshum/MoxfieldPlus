@@ -1,0 +1,49 @@
+{
+  "name": "moxfield-plus",
+  "version": "1.0.0",
+  "description": "Moxfield+: Custom exports & Tagger integration for precise deckbuilding. Preserve printings, foils, & more. Craft & share decks seamlessly.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivanshum/MoxfieldPlus"
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Ivan Shumilov",
+    "url": "https://github.com/ivanshum"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.25",
+    "@eslint/compat": "^1.2.0",
+    "@eslint/js": "^9.11.1",
+    "@types/chrome": "^0.0.278",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.7.0",
+    "vite": "^5.4.9",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "packageManager": "yarn@4.5.0"
+}
