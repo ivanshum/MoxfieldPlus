@@ -1,3 +1,11 @@
 {
-  "recommendations": ["arcanis.vscode-zipfs", "dbaeumer.vscode-eslint"]
+  "recommendations": [
+    "arcanis.vscode-zipfs",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "joshbolduc.commitlint",
+    "vivaxy.vscode-conventional-commits",
+    "wdhongtw.gpg-indicator",
+    "github.vscode-github-actions"
+  ]
 }

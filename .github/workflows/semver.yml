@@ -1,0 +1,49 @@
+name: builds and release
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'yarn'
+      - name: Install
+        run: yarn --immutable
+      - name: Build
+        run: yarn build
+      - name: Pack dist
+        run: tar -zcf "dist_$(date '+%Y-%m-%d_%H-%M-%S%z(%Z)').tar.gz" dist
+      - name: Upload production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist_*.tar.gz
+          compression-level: 0
+          retention-days: 1
+  release:
+    needs: [build1]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download production artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

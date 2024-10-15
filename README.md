@@ -1,4 +1,4 @@
-# <img src="assets/images/icon.png" alt="Moxfield+ Logo" width="160" height="160" style="vertical-align: middle; margin: 0 auto;"> Moxfield+ your deckbuilding spark
+# <img src="public/images/icon.png" alt="Moxfield+ Logo" width="160" height="160" style="vertical-align: middle; margin: 0 auto;"> Moxfield+ your deckbuilding spark
 
 ## Description
 

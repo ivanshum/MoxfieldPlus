@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: yarn lint
+commit-msg:
+  parallel: true
+  scripts:
+    'commitlint.sh':
+      runner: bash
