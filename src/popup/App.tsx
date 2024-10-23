@@ -1,6 +1,6 @@
 import { SharedFunction } from '../shared/utils';
 import ThemeContext from '../shared/muiTheme';
-import { Button } from '@mui/material';
+import Button from '@mui/material/Button';
 
 const App = () => {
   return (

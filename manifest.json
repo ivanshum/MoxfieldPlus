@@ -27,6 +27,7 @@
       "matches": ["https://www.moxfield.com/*", "http://www.moxfield.com/*"]
     }
   ],
+  "options_page": "options.html",
   "background": {
     "service_worker": "src/background/background.ts",
     "type": "module",
