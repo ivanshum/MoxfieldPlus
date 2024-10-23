@@ -32,7 +32,7 @@
     "type": "module",
     "persistent": false
   },
-  "permissions": ["tabs", "scripting"],
+  "permissions": ["tabs", "scripting", "storage"],
   "host_permissions": [
     "https://www.moxfield.com/*",
     "http://www.moxfield.com/*"

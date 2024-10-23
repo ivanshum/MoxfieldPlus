@@ -441,9 +441,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@crxjs/vite-plugin@npm:^2.0.0-beta.25":
-  version: 2.0.0-beta.25
-  resolution: "@crxjs/vite-plugin@npm:2.0.0-beta.25"
+"@crxjs/vite-plugin@npm:^2.0.0-beta.26":
+  version: 2.0.0-beta.26
+  resolution: "@crxjs/vite-plugin@npm:2.0.0-beta.26"
   dependencies:
     "@rollup/pluginutils": "npm:^4.1.2"
     "@webcomponents/custom-elements": "npm:^1.5.0"
@@ -461,7 +461,7 @@ __metadata:
     react-refresh: "npm:^0.13.0"
     rollup: "npm:2.78.1"
     rxjs: "npm:7.5.7"
-  checksum: 10c0/58147a0c1a7fb6bff02087d8e013ec9a0b233843c7a67328f43a64a2a20a2d9567fc3e454c454294535d68410cd70b3d94270c2d8f27bebb11c92f3e055c854b
+  checksum: 10c0/119663b629ef0567a70b60e4b2daebb784bcf11eb0a858277429f403d4e9d8f5164353735d5ba903120350b738a2181a5736bddf9177183ab1d148f28e70c332
   languageName: node
   linkType: hard
 
@@ -5506,7 +5506,7 @@ __metadata:
     "@commitlint/cli": "npm:^19.5.0"
     "@commitlint/config-conventional": "npm:^19.5.0"
     "@commitlint/format": "npm:^19.5.0"
-    "@crxjs/vite-plugin": "npm:^2.0.0-beta.25"
+    "@crxjs/vite-plugin": "npm:^2.0.0-beta.26"
     "@emotion/react": "npm:^11.13.3"
     "@emotion/styled": "npm:^11.13.0"
     "@eslint/compat": "npm:^1.2.0"

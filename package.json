@@ -34,7 +34,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@commitlint/format": "^19.5.0",
-    "@crxjs/vite-plugin": "^2.0.0-beta.25",
+    "@crxjs/vite-plugin": "^2.0.0-beta.26",
     "@eslint/compat": "^1.2.0",
     "@eslint/js": "^9.11.1",
     "@semantic-release/changelog": "^6.0.3",
@@ -59,7 +59,7 @@
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^5.0.1"
   },
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "yarn@4.5.1",
   "release": {
     "branches": [
       "main"
